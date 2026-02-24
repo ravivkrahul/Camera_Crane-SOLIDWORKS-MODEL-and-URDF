@@ -1,10 +1,13 @@
-# Camera_Crane-SOLIDWORKS-MODEL-and-URDF
-This repository contains the complete 3D design and mechanical assembly of a 6-Degree of Freedom (DOF) crane system. The model was designed from the ground up in SolidWorks with a focus on kinematic accuracy and seamless integration with ROS 2 and MoveIt.
+# 🎥 Camera Crane – SolidWorks Model + URDF + ROS 2 Simulation
+
+This repository contains the complete mechanical design, URDF model, and ROS 2 simulation of a **6-Degree-of-Freedom (DOF) Camera Crane System**.  
+The robot was designed from the ground up in **SolidWorks** with a focus on **kinematic accuracy**, **realistic dynamics**, and **seamless ROS 2 / Gazebo integration**.
 ## 🛠 Project Overview
 The crane features a unique kinematic chain:
 * **1 Prismatic Joint**: A linear rail base for extended reach.
 * **5 Revolute Joints**: Providing high-dexterity movement for end-effector positioning.
 * **Camera Integration**: Specifically designed mount for an optical sensor at the tip.
+<img width="3072" height="1735" alt="camera_crane_preview" src="https://github.com/user-attachments/assets/4b76e043-c5e9-44ed-9c9e-459f362e8ba4" />
 
 ## 📂 Repository Structure
 * **`/SOLIDWORK MODEL`**: Contains `.SLDPRT` and `.SLDASM` source files.
@@ -12,3 +15,53 @@ The crane features a unique kinematic chain:
     * `/meshes`: High-quality `.STL` files for visual and collision properties.
     * `/urdf`: The generated `camera_crane.urdf` file containing joint limits and inertia.
     * `/config`: Joint limits and kinematic parameters.
+* **`/camera_crane`**: This contains the complete ros2 package for gazebo simulation using Teleop
+  
+## ⚙️ Kinematic Structure
+
+| Joint Type | Quantity | Purpose |
+|------------|----------|----------|
+| Prismatic  | 1        | Linear rail extension |
+| Revolute   | 5        | Orientation & positioning |
+| End Effector | —      | Camera / sensor mount |
+
+## ✅ Requirements
+
+- ROS 2 (Humble / Iron recommended)
+- Gazebo
+- RViz2
+- colcon build tools
+## Control Your Camera Crane!
+---------------------------
+Joint Selection:
+1, 2, 3, 4, 5, 6
+
+Movement:
+w : Increase (+)
+s : Decrease (-)
+
+Current Joint: 1
+Step Size: 0.05
+
+CTRL-C to quit
+
+##🎯 Example Use Cases
+
+The crane can be used for:
+* Camera positioning simulation
+* Inspection trajectory planning
+* Kinematic studies
+* Control experiments
+* MoveIt motion planning demos
+
+##⚠️ Notes on Simulation & Dynamics
+
+* Inertia and mass parameters were tuned for stable Gazebo behavior
+* Collision meshes simplified for performance
+* Joint limits defined for realistic motion
+
+##👨‍💻 Author
+
+Designed and developed by Rahul
+Robotics • ROS 2 • Simulation • Controls
+
