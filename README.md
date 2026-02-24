@@ -45,7 +45,7 @@ Step Size: 0.05
 
 CTRL-C to quit
 
-##🎯 Example Use Cases
+## 🎯 Example Use Cases
 
 The crane can be used for:
 * Camera positioning simulation
@@ -54,13 +54,13 @@ The crane can be used for:
 * Control experiments
 * MoveIt motion planning demos
 
-##⚠️ Notes on Simulation & Dynamics
+## ⚠️ Notes on Simulation & Dynamics
 
 * Inertia and mass parameters were tuned for stable Gazebo behavior
 * Collision meshes simplified for performance
 * Joint limits defined for realistic motion
 
-##👨‍💻 Author
+## 👨‍💻 Author
 
 Designed and developed by Rahul
 Robotics • ROS 2 • Simulation • Controls
